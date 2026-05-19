@@ -1,0 +1,61 @@
+﻿/* SOLO DOS COLORES:
+   Azul oscuro y blanco
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1e3a5f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 12px;
+}
+
+    .login-card h2 {
+        color: #1e3a5f;
+        font-weight: bold;
+    }
+
+.form-label {
+    color: #1e3a5f;
+    font-weight: 600;
+    padding-top: 0px;
+}
+
+
+.form-control {
+    border: 1px solid #1e3a5f;
+    height: 45px;
+}
+
+.form-control:focus {
+    border-color: #1e3a5f;
+    box-shadow: none;
+}
+
+
+.btn-login {
+    background-color: #1e3a5f;
+    color: #ffffff;
+    height: 45px;
+    font-weight: bold;
+    border: none;
+}
+
+    .btn-login:hover {
+        background-color: #16314f;
+        color: #ffffff;
+    }
