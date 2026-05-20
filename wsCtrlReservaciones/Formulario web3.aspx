@@ -24,6 +24,11 @@
 
             <div class="card-body">
 
+                <asp:Label
+                    ID="Label1"
+                    runat="server"
+                    CssClass="text-danger">
+                </asp:Label>
 
                 <div class="row">
 

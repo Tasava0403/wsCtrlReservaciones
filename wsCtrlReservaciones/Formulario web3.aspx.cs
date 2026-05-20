@@ -1,17 +1,18 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
 using System.Linq;
+using System.Net.Http;
+using System.Reflection.Emit;
+using System.Text;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
-using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using System.Data;
-using System.Net.Http;
-using System.Threading.Tasks;
 using wsCtrlReservaciones.models;
-using System.Text;
-using System.IO;
 
 namespace wsCtrlReservaciones
 {
@@ -19,6 +20,16 @@ namespace wsCtrlReservaciones
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                string idMedico = Request.QueryString["idMedico"];
+
+                if (!string.IsNullOrEmpty(idMedico))
+                {
+                    // usar el id del médico
+                    Label1.Text = idMedico;
+                }
+            }
 
         }
 

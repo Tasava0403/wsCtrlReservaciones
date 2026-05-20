@@ -51,7 +51,7 @@ namespace wsCtrlReservaciones
                         string resultado = await respuesta.Content.ReadAsStringAsync();
                         objRespuesta = JsonConvert.DeserializeObject<clsApiStatus>(resultado);
                         // ------------------------------------------
-                        JArray jsonArray = (JArray)objRespuesta.datos["vwAgendaCitas"];
+                        JArray jsonArray = (JArray)objRespuesta.datos["vw_agenda_citas"];
                         // Convertir JArray a DataTable
                         DataTable dt = JsonConvert.DeserializeObject<DataTable>(jsonArray.ToString());
                         // -------------------------------------------

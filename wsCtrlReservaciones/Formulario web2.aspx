@@ -32,7 +32,7 @@
                         runat="server"
                         AutoGenerateColumns="False"
                         CssClass="table table-bordered table-hover table-striped grid-reservaciones"
-                        HeaderStyle-CssClass="table-dark" AllowPaging="True" PageSize="2" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                        HeaderStyle-CssClass="table-dark" AllowPaging="True" PageSize="7" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
 
                         <AlternatingRowStyle BackColor="Gray" />
 

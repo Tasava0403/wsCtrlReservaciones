@@ -59,13 +59,13 @@
 
                         <asp:Button ID="btnClientes"
                             runat="server"
-                            Text="Registrar Consulta"
-                            CssClass="btn" PostBackUrl="~/Formulario web3.aspx" />
+                            Text="Disponibilidad"
+                            CssClass="btn" PostBackUrl="~/Formulario web4.aspx" />
 
                         <asp:Button ID="Button1"
                             runat="server"
-                            Text="Disponibilidad"
-                            CssClass="btn" PostBackUrl="~/Formulario web4.aspx" />
+                            Text="Acerca de Nosotros"
+                            CssClass="btn" PostBackUrl="~/Formulario web5.aspx" />
 
                     </div>
 

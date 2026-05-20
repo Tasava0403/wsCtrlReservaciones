@@ -13,6 +13,7 @@ using wsCtrlReservaciones.models;
 using System.Text;
 using System.IO;
 
+
 namespace wsCtrlReservaciones
 {
     public partial class Formulario_web1 : System.Web.UI.Page
@@ -26,6 +27,16 @@ namespace wsCtrlReservaciones
             if (!IsPostBack)
             {
                 await CargarMedicos();
+            }
+        }
+
+        protected void rptMedicos_ItemCommand(object source, RepeaterCommandEventArgs e)
+        {
+            if (e.CommandName == "Seleccionar")
+            {
+                string idMedico = e.CommandArgument.ToString();
+
+                Response.Redirect("Formulario web3.aspx?idMedico=" + idMedico);
             }
         }
 
