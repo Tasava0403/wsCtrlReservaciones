@@ -96,7 +96,11 @@
 
                             CommandName="Seleccionar"
 
-                            CommandArgument='<%# Eval("id_medico") %>' />
+                            CommandArgument='<%# Eval("id_medico") + "|" +
+                                                Eval("nombre_completo") + "|" +
+                                                Eval("especialidad") + "|" +
+                                                Eval("consultorio") + "|" +
+                                                Eval("telefono") %>' />
 
                     </div>
 

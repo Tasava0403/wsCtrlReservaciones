@@ -59,11 +59,11 @@
 
                             <asp:BoundField DataField="hora_fin" HeaderText="Hora Final" />
 
-                            <asp:BoundField DataField="tipo_consulta" HeaderText="Hora Final" />
+                            <asp:BoundField DataField="tipo_consulta" HeaderText="Tipo Consulta" />
 
-                            <asp:BoundField DataField="estado" HeaderText="Hora Final" />
+                            <asp:BoundField DataField="estado" HeaderText="Estado" />
 
-                            <asp:BoundField DataField="motivo_consulta" HeaderText="Hora Final" />
+                            <asp:BoundField DataField="motivo_consulta" HeaderText="Motivo Consulta" />
 
                         </Columns>
 

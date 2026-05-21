@@ -24,10 +24,30 @@ namespace wsCtrlReservaciones
             {
                 string idMedico = Request.QueryString["idMedico"];
 
-                if (!string.IsNullOrEmpty(idMedico))
+                if (!IsPostBack)
                 {
-                    // usar el id del médico
-                    Label1.Text = idMedico;
+                    string id_Medico =
+                        Request.QueryString["idMedico"];
+
+                    string nombre =
+                        Request.QueryString["nombre"];
+
+                    string especialidad =
+                        Request.QueryString["especialidad"];
+
+                    string consultorio =
+                        Request.QueryString["consultorio"];
+
+                    string telefono =
+                        Request.QueryString["telefono"];
+
+                    // ID NO SE MUESTRA
+                    ViewState["idMedico"] = idMedico;
+
+                    nMedico.Text = nombre;
+                    mEspecialidad.Text = especialidad;
+                    mConsultorio.Text = consultorio;
+                    mNumero.Text = telefono;
                 }
             }
 
@@ -128,7 +148,7 @@ namespace wsCtrlReservaciones
                 {
                     var cita = new
                     {
-                        id_medico = 1,
+                        id_medico = Convert.ToInt32(ViewState["idMedico"]),
                         nombre_paciente = txtNombrePaciente.Text,
                         telefono_paciente = txtTelefono.Text,
                         email_paciente = txtEmail.Text,

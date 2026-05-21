@@ -24,11 +24,43 @@
 
             <div class="card-body">
 
-                <asp:Label
-                    ID="Label1"
-                    runat="server"
-                    CssClass="text-danger">
-                </asp:Label>
+                        <div class="col-md-3">
+                            <strong>Médico:</strong><br />
+                            <asp:Label
+                                ID="nMedico"
+                                runat="server"
+                                CssClass="text-danger">
+                            </asp:Label>
+                        </div>
+
+                        <div class="col-md-3">
+                            <strong>Consultorio:</strong><br />
+                            <asp:Label
+                                ID="mConsultorio"
+                                runat="server"
+                                CssClass="text-danger">
+                            </asp:Label>
+                        </div>
+
+                        <div class="col-md-3">
+                            <strong>Especialidad:</strong><br />
+                            <asp:Label
+                                ID="mEspecialidad"
+                                runat="server"
+                                CssClass="text-danger">
+                            </asp:Label>
+                        </div>
+
+                        <div class="col-md-3">
+                            <strong>Teléfono:</strong><br />
+                            <asp:Label
+                                ID="mNumero"
+                                runat="server"
+                                CssClass="text-danger">
+                            </asp:Label>
+                        </div>
+
+                    </div>
 
                 <div class="row">
 

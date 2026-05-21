@@ -30,13 +30,28 @@ namespace wsCtrlReservaciones
             }
         }
 
-        protected void rptMedicos_ItemCommand(object source, RepeaterCommandEventArgs e)
+        protected void rptMedicos_ItemCommand(object source,
+                                      RepeaterCommandEventArgs e)
         {
             if (e.CommandName == "Seleccionar")
             {
-                string idMedico = e.CommandArgument.ToString();
+                string[] datos =
+                    e.CommandArgument.ToString().Split('|');
 
-                Response.Redirect("Formulario web3.aspx?idMedico=" + idMedico);
+                string id = datos[0];
+                string nombre = datos[1];
+                string especialidad = datos[2];
+                string consultorio = datos[3];
+                string telefono = datos[4];
+
+                Response.Redirect(
+                    "Formulario web3.aspx?" +
+                    "idMedico=" + Server.UrlEncode(id) +
+                    "&nombre=" + Server.UrlEncode(nombre) +
+                    "&especialidad=" + Server.UrlEncode(especialidad) +
+                    "&consultorio=" + Server.UrlEncode(consultorio) +
+                    "&telefono=" + Server.UrlEncode(telefono)
+                );
             }
         }
 
