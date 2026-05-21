@@ -175,6 +175,11 @@
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
     <Content Include="Site.Master" />
+    <Content Include="uploads\medicos\medicos_1.png" />
+    <Content Include="uploads\medicos\medicos_5.png" />
+    <Content Include="uploads\medicos\medicos_4.png" />
+    <Content Include="uploads\medicos\medicos_3.png" />
+    <Content Include="uploads\medicos\medicos_2.png" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />

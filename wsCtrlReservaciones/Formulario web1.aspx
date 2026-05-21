@@ -55,8 +55,9 @@
                 <div class="staff-card">
 
                     <img
-                        src='<%# "http://3.220.145.46" + Eval("url_foto") %>'
-                        class="staff-image" />
+                    src='<%# Eval("url_foto").ToString() %>'
+                    class="staff-image" />
+                    
 
                     <div class="staff-info">
 
